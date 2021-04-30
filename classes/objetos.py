@@ -12,4 +12,8 @@ class Objetos:
 
   def quantidade (self):
     qtd = self.quantidade
-    return qtd
+    print (str(qtd))
+
+  def printar (self):
+    for n in self.objetos:
+      print(n)

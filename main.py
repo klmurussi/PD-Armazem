@@ -41,8 +41,7 @@ while True:
     obj.addObjeto(nome, volume, valor)
 
   elif escolha == 2:
-    qtd = str(obj.quantidade())
-    print (qtd)
+    obj.printar()
   elif escolha == 3:
     break;
   else:

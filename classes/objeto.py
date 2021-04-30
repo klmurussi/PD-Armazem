@@ -4,6 +4,5 @@ class Objeto:
     self.volume = volume
     self.valor = valor
 
-    def __repr__(self): 
-      mensagem = "nome:%s volume:%s valor:%s" % (self.nome, self.volume, self.valor)
-      return mensagem
+  def __repr__ (self): 
+    return repr("nome: " + self.nome + " volume: " + str(self.volume) + " valor: " + str(self.valor))
