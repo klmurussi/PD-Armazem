@@ -2,8 +2,14 @@ from classes import objeto
 
 class Objetos:
   def __init__ (self):
-    self.objetos = {}
+    self.objetos = []
+    self.quantidade = 0
 
   def addObjeto (self, nome, volume, valor):
-    objeto = objeto.Objeto(nome, volume, valor)
-    self.objetos.append(objeto)
+    objetoLocal = objeto.Objeto(nome, volume, valor)
+    self.objetos.append(objetoLocal)
+    self.quantidade = (self.quantidade) +  1
+
+  def quantidade (self):
+    qtd = self.quantidade
+    return qtd

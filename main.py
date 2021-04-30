@@ -10,7 +10,7 @@ while True:
     print("Valor inválido, digite apenas números.\n")
 
 while True:
-  """objetos = objetos.Objetos()"""
+  obj = objetos.Objetos()
   print("\n1- Adicionar objeto\n2- Calcular quais deles vão para o armazem\n3- Encerrar o programa")
   escolha = input()
 
@@ -38,10 +38,11 @@ while True:
         break;
       except:
         print ("Valor inválido, digite apenas números.\n")
-    """objetos.addObjeto(nome, volume, valor)"""
+    obj.addObjeto(nome, volume, valor)
 
   elif escolha == 2:
-    print()
+    qtd = str(obj.quantidade())
+    print (qtd)
   elif escolha == 3:
     break;
   else:
