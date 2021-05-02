@@ -43,7 +43,13 @@ while True:
         objs.addObjeto(nome, volume, valor)
 
     elif escolha == 2:
-        print(knapsack(capacidade, objs.objetos, len(objs.objetos)))
+        res = knapsack(capacidade, objs.objetos, len(objs.objetos))
+        print('\nMaior valor possível:')
+        print(res[0])
+        print('Objetos adicionados:')
+        res[1].print()
+        print('Volume restante: ')
+        print(res[2])
     elif escolha == 3:
         break
     else:

@@ -7,13 +7,11 @@ class Objetos:
 
     def addObjeto(self, nome, volume, valor):
         obj = objeto.Objeto(nome, volume, valor)
-        print(obj)
         self.objetos.append(obj)
-        print(self)
-        for item in self.objetos:
-            print(item)
+
+    def add(self, objeto):
+        self.objetos.append(objeto)
 
     def print(self):
-        print(self)
         for item in self.objetos:
             print(item)

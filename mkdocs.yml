@@ -1,0 +1,22 @@
+site_name: "Max Profit"
+theme:
+  name: material
+  language: pt
+  logo: images/armazem.png
+  favicon: images/armazem.png
+  features:
+    - navigation.instant
+  palette:
+    primary: purple
+    accent: purple
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Início: index.md
+  - Ambiete de desenvolvimento: ambiente.md
