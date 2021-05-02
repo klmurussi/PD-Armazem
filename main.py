@@ -45,10 +45,10 @@ while True:
     elif escolha == 2:
         res = knapsack(capacidade, objs.objetos, len(objs.objetos))
         print('\nMaior valor possível:')
-        print(res)
-        print('Objetos adicionados:')
+        print(res[0])
+        print('\nObjetos adicionados:')
         res[1].print()
-        print('Volume restante: ')
+        print('\nVolume restante: ')
         print(res[2])
     elif escolha == 3:
         break
