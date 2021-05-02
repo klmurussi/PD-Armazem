@@ -38,5 +38,5 @@ def findSolution(objetos, K, qtdObj, capacidade):
         else:
             resObjs.add(objetos[i-1])
             res = res - objetos[i-1].valor
-            w = cap - objetos[i-1].volume
-    return (resObjs, w)
+            cap = cap - objetos[i-1].volume
+    return (resObjs, cap)
