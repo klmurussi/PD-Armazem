@@ -24,19 +24,19 @@ def knapsack(capacidade, objetos, qtdObjetos):
     return (K[qtdObjetos][capacidade], res[0], res[1])
 
 
-def findSolution(objetos, matrizRes, qtdObj, capacidade):
-    res = matrizRes[qtdObj][capacidade]
-    resObjs = Objetos()
-    qtdObs = qtdObj
+def findSolution(objetos, K, qtdObj, capacidade):
+    res = K[qtdObj][capacidade]
+    print(res)
+     
     cap = capacidade
-    while ((cap != 0) and (qtdObs-1 > 0)):
-        if res == matrizRes[qtdObs-1][cap]:
-            qtdObs -= 1
+    resObjs = Objetos()
+    for i in range(qtdObj, 0, -1):
+        if res <= 0:
+            break
+        if res == K[i - 1][cap]:
+            continue
         else:
-            if(cap - objetos[qtdObs-1].volume > 0):
-                resObjs.add(objetos[qtdObs-1])
-                cap -= objetos[qtdObs-1].volume
-                qtdObs -= 1
-            else:
-                return (resObjs, cap)
-    return (resObjs, cap)
+            resObjs.add(objetos[i-1])
+            res = res - objetos[i-1].valor
+            w = cap - objetos[i-1].volume
+    return (resObjs, w)
