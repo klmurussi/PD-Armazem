@@ -33,4 +33,6 @@ O nosso projeto calcula qual o maior valor que pode ser armazenado em um armazem
 ## Vídeo da dupla
 
 
-[![Aqui será inserido o vídeo da dupla assim que for gravado]()]()
+[![Video sobre o projeto](https://img.youtube.com/vi/VMs9SwEyMBI/0.jpg)](https://youtu.be/VMs9SwEyMBI)
+
+#### Vídeo também disponível em mp4 na raiz do repositório
